@@ -23,6 +23,7 @@ _近期 GitHub Trending 热门 Agent 项目_
 - [lightpanda-io/browser](https://github.com/lightpanda-io/browser) - **⭐ 周 +9.9k** 专为 AI 设计的无头浏览器——给 AI 装上"眼睛"，让 AI 能真正上网
 - [colorizeblob/impeccable](https://github.com/colorizeblob/impeccable) - AI 执行的安全检查层——给 AI 的操作系上"安全带"，防止乱删文件乱执行命令
 - [coze-dev/page-agent](https://github.com/coze-dev/page-agent) - 网页 AI 自动化 Agent——让 AI 直接操作网页完成任务
+- [alibaba/page-agent](https://github.com/alibaba/page-agent) - 阿里巴巴开源的网页 AI 自动化 Agent
 - [context-hub/context-hub](https://github.com/context-hub/context-hub) - AI 上下文仓库——帮你压缩、存储、复用上下文，省钱
 - [brexhq/deepagents](https://github.com/brexhq/deepagents) - 规模化多智能体开发框架——让你低成本开发、运行多个智能体
 - [microsoft/BitNet](https://github.com/microsoft/BitNet) - 微软开源的 1-bit 大模型压缩技术——极致压缩，让大模型更便宜
