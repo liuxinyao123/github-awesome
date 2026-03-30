@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GitHub 项目收藏库</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#2563eb',
+            secondary: '#64748b',
+          },
+          fontFamily: {
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+          },
+        },
+      }
+    }
+  </script>
+  <style>
+    body {
+      background: linear-gradient(135deg, #f5f7fa 0%, #e4edf5 100%);
+      min-height: 100vh;
+    }
+    .category-icon {
+      width: 48px;
+      height: 48px;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .project-row:hover {
+      background-color: #f8fafc;
+    }
+  </style>
+</head>
+<body>
+  <div class="container mx-auto px-4 py-8 max-w-6xl">
+    <!-- Header -->
+    <header class="text-center mb-12">
+      <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-3">
+        <i class="fa fa-github text-primary mr-3"></i>
+        GitHub 项目收藏库
+      </h1>
+      <p class="text-gray-600 text-lg">记录发现的优秀开源项目，按分类整理</p>
+    </header>
+
+    <!-- Search -->
+    <div class="mb-8">
+      <div class="relative max-w-md mx-auto">
+        <input 
+          type="text" 
+          id="searchInput" 
+          placeholder="搜索项目..." 
+          class="w-full px-4 py-3 pl-12 rounded-xl border border-gray-200 shadow-sm focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary"
+          onkeyup="searchProjects()"
+        >
+        <i class="fa fa-search absolute left-4 top-1/2 -translate-y-1/2 text-gray-400"></i>
+      </div>
+    </div>
+
+    <!-- Content -->
+    <div id="content">
+      <!-- AI / 大模型 / Agent -->
+      <section class="mb-10 category-section" data-category="AI / 大模型 / Agent">
+        <div class="flex items-center mb-4">
+          <div class="category-icon bg-blue-100 text-blue-600 mr-4">
+            <i class="fa fa-robot text-xl"></i>
+          </div>
+          <h2 class="text-2xl font-bold text-gray-800">AI / 大模型 / Agent</h2>
+        </div>
+        <div class="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden">
+          <table class="w-full text-sm">
+            <thead>
+              <tr class="bg-gray-50 border-b border-gray-200">
+                <th class="px-4 py-3 text-left font-semibold text-gray-700 w-1/5">项目</th>
+                <th class="px-4 py-3 text-left font-semibold text-gray-700 w-2/5">简介</th>
+                <th class="px-4 py-3 text-left font-semibold text-gray-700 w-1/5">数据</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="border-b border-gray-100 project-row" data-name="openclaw/openclaw" data-desc="OpenClaw 开源 AI 助手框架">
+                <td class="px-4 py-3 font-medium"><a href="https://github.com/openclaw/openclaw" target="_blank" class="text-primary hover:underline">openclaw/openclaw</a></td>
+                <td class="px-4 py-3 text-gray-600">OpenClaw 开源 AI 助手框架</td>
+                <td class="px-4 py-3 text-gray-500"><i class="fa fa-github mr-1"></i>Open Source</td>
+              </tr>
+              <tr class="border-b border-gray-100 project-row" data-name="lobehub/lobehub" data-desc="下一代多智能体协作平台">
+                <td class="px-4 py-3 font-medium"><a href="https://github.com/lobehub/lobehub" target="_blank" class="text-primary hover:underline">lobehub/lobehub</a></td>
+                <td class="px-4 py-3 text-gray-600">下一代多智能体协作平台，将 Agent 作为工作交互单元，支持多智能体协作与智能团队设计</td>
+                <td class="px-4 py-3 text-gray-500"><i class="fa fa-github mr-1"></i>Open Source</td>
+              </tr>
+              <tr class="border-b border-gray-100 project-row" data-name="anthropics/claude-code" data-desc="Claude Code 编码助手">
+                <td class="px-4 py-3 font-medium"><a href="https://github.com/anthropics/claude-code" target="_blank" class="text-primary hover:underline">anthropics/claude-code</a></td>
+                <td class="px-4 py-3 text-gray-6">Claude Code 编码助手</td>
+                <td class="px-4 py-3 text-gray-500"><i class="fa fa-github mr-1"></i>Open Source</td>
+              </tr>
+              <tr class="border-b border-gray-100 project-row" data-name="continuedev/continue" data-desc="开源 IDE AI 辅助编码">
+                <td class="px-4 py-3 font-medium"><a href="https://github.com/continuedev/continue" target="_blank" class="text-primary hover:underline">continuedev/continue</a></td>
+                <td class="px-4 py-3 text-gray-6666666">开源 IDE AI 辅助编码</td>
+                <td class="px-4 py-3 text-gray-500"><i class="fa fa-github mr-1"></i>Open Source</td>
+              </tr>
+              <tr class="border-b border-gray-100 project-row" data-name="kyegomez/OpenAGI" data-desc="开源多智能体框架">
+                <td class="px-4 py-3 font-medium"><a href="https://github.com/kyegomez/OpenAGI" target="_blank" class="text-primary hover:underline">kyegomez/OpenAGI</a></td>
+                <td class="px-4 py-3 text-gray-6066666">开源多智能体框架</td>
+                <td class="px-4 py-3 text-gray-500"><i class="fa fa-github mr-1"></i>Open Source</td>
+              </tr>
+              <tr class="project-row" data-name="mermaid-js/mermaid" data-desc="基于文本的图表生成">
+                <td class="px-4 py-3 font-medium"><a href="https://github.com/mermaid-js/mermaid" target="_blank" class="text-primary hover:underline">mermaid-js/mermaid</a></td>
+                <td class="px-4 py-3 text-gray-600">基于文本的图表生成</td>
+                <td class="px-4 py-3 text-gray-500"><i class="fa fa-github mr-1"></i>Open Source</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- 企业协作 -->
+      <section class="mb-10 category-section" data-category="企业协作">
+        <div class="flex items-center mb-4">
+          <div class="category-icon bg-green-100 text-green-600 mr-4">
+            <i class="fa fa-users text-xl"></i>
+          </div>
+          <h2 class="text-2xl font-bold text-gray-800">企业协作</h2>
+        </div>
+        <div class="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden">
+          <table class="w-full text-sm">
+            <thead>
+              <tr class="bg-gray-50 border-b border-gray-200">
+                <th class="px-4 py-3 text-left font-semibold text-gray-700 w-1/5">项目</th>
+                <th class="px-4 py-3 text-left font-semibold text-gray-700 w-2/5">简介</th>
+                <th class="px-4 py-3 text-left font-semibold text-gray-700 w-1/5">数据</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="border-b border-gray-100 project-row" data-name="nextcloud/server" data-desc="开源私有云与协作平台">
+                <td class="px-4 py-3 font-medium"><a href="https://github.com/nextcloud/server" target="_blank" class="text-primary hover:underline">nextcloud/server</a></td>
+                <td class="px-4 py-3 text-gray-600">开源私有云与协作平台</td>
+                <td class="px-4 py-3 text-gray-500"><i class="fa fa-github mr-1"></i>Open Source</td>
+              </tr>
+              <tr class="border-b border-gray-100 project-row" data-name="onlyoffice/DocumentServer" data-desc="开源在线办公文档编辑器">
+                <td class="px-4 py-3 font-medium"><a href="https://github.com/onlyoffice/DocumentServer" target="_blank" class="text-primary hover:underline">onlyoffice/DocumentServer</a></td>
+                <td class="px-4 py-3 text-gray-600">开源在线办公文档编辑器</td>
+                <td class="px-4 py-3 text-gray-500"><i class="fa fa-github mr-1"></i>Open Source</td>
+              </tr>
+              <tr class="project-row" data-name="casbin/casbin" data-desc="开源访问控制权限框架">
+                <td class="px-4 py-3 font-medium"><a href="https://github.com/casbin/casbin" target="_blank" class="text-primary hover:underline">casbin/casbin</a></td>
+                <td class="px-4 py-3 text-gray-600">开源访问控制权限框架</td>
+                <td class="px-4 py-3 text-gray-500"><i class="fa fa-github mr-1"></i>Open Source</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- 前端开发 -->
+      <section class="mb-10 category-section" data-category="前端开发">
+        <div class="flex items-center mb-4">
+          <div class="category-icon bg-purple-100 text-purple-600 mr-4">
+            <i class="fa fa-code text-xl"></i>
+          </div>
+          <h2 class="text-2xl font-bold text-gray-800">前端开发</h2>
+        </div>
+        <div class="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden">
+          <table class="w-full text-sm">
+            <thead>
+              <tr class="bg-gray-50 border-b border-gray-200">
+                <th class="px-4 py-3 text-left font-semibold text-gray-700 w-1/5">项目</th>
+                <th class="px-4 py-3 text-left font-semibold text-gray-700 w-2/5">简介</th>
+                <th class="px-4 py-3 text-left font-semibold text-gray-700 w-1/5">数据</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="border-b border-gray-100 project-row" data-name="shadcn/ui" data-desc="漂亮的 React 组件库">
+                <td class="px-4 py-3 font-medium"><a href="https://github.com/shadcn/ui" target="_blank" class="text-primary hover:underline">shadcn/ui</a></td>
+                <td class="px-4 py-3 text-gray-600">漂亮的 React 组件库</td>
+                <td class="px-4 py-3 text-gray-500"><i class="fa fa-github mr-1"></i>Open Source</td>
+              </tr>
+              <tr class="border-b border-gray-100 project-row" data-name="tailwindlabs/tailwindcss" data-desc="实用优先的 CSS 框架">
+                <td class="px-4 py-3 font-medium"><a href="https://github.com/tailwindlabs/tailwindcss" target="_blank" class="text-primary hover:underline">tailwindlabs/tailwindcss</a></td>
+                <td class="px-4 py-3 text-gray-600">实用优先的 CSS 框架</td>
+                <td class="px-4 py-3 text-gray-500"><i class="fa fa-github mr-1"></i>Open Source</td>
+              </tr>
+              <tr class="project-row" data-name="hono/hono" data-desc="轻量快速的 Web 框架">
+                <td class="px-4 py-3 font-medium"><a href="https://github.com/hono/hono" target="_blank" class="text-primary hover:underline">hono/hono</a></td>
+                <td class="px-4 py-3 text-gray-600">轻量快速的 Web 框架</td>
+                <td class="px-4 py-3 text-gray-500"><i class="fa fa-github mr-1"></i>Open Source</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- 工具 -->
+      <section class="mb-10 category-section" data-category="工具">
+        <div class="flex items-center mb-4">
+          <div class="category-icon bg-orange-100 text-orange-600 mr-4">
+            <i class="fa fa-wrench text-xl"></i>
+          </div>
+          <h2 class="text-2xl font-bold text-gray-800">工具</h2>
+        </div>
+        <div class="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden">
+          <table class="w-full text-sm">
+            <thead>
+              <tr class="bg-gray-50 border-b border-gray-200">
+                <th class="px-4 py-3 text-left font-semibold text-gray-700 w-1/5">项目</th>
+                <th class="px-4 py-3 text-left font-semibold text-gray-700 w-2/5">简介</th>
+                <th class="px-4 py-3 text-left font-semibold text-gray-700 w-1/5">数据</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="border-b border-gray-100 project-row" data-name="marp-team/marp-cli" data-desc="用 Markdown 写 PPT">
+                <td class="px-4 py-3 font-medium"><a href="https://github.com/marp-team/marp-cli" target="_blank" class="text-primary hover:underline">marp-team/marp-cli</a></td>
+                <td class="px-4 py-3 text-gray-600">用 Markdown 写 PPT</td>
+                <td class="px-4 py-3 text-gray-500"><i class="fa fa-github mr-1"></i>Open Source</td>
+              </tr>
+              <tr class="border-b border-gray-100 project-row" data-name="nodejs/node" data-desc="Node.js JavaScript 运行时">
+                <td class="px-4 py-3 font-medium"><a href="https://github.com/nodejs/node" target="_blank" class="text-primary hover:underline">nodejs/node</a></td>
+                <td class="px-4 py-3 text-gray-600">Node.js JavaScript 运行时</td>
+                <td class="px-4 py-3 text-gray-500"><i class="fa fa-github mr-1"></i>Open Source</td>
+              </tr>
+              <tr class="project-row" data-name="pm2/pm2" data-desc="Node.js 进程管理器">
+                <td class="px-4 py-3 font-medium"><a href="https://github.com/pm2/pm2" target="_blank" class="text-primary hover:underline">pm2/pm2</a></td>
+                <td class="px-4 py-3 text-gray-6666666">Node.js 进程管理器</td>
+                <td class="px-4 py-3 text-gray-500"><i class="fa fa-github mr-1"></i>Open Source</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- 云开发环境 / DevContainers -->
+      <section class="mb-10 category-section" data-category="云开发环境 / DevContainers">
+        <div class="flex items-center mb-4">
+          <div class="category-icon bg-teal-100 text-teal-600 mr-4">
+            <i class="fa fa-cloud text-xl"></i>
+          </div>
+          <h2 class="text-2xl font-bold text-gray-800">云开发环境 / DevContainers</h2>
+        </div>
+        <div class="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden">
+          <table class="w-full text-sm">
+            <thead>
+              <tr class="bg-gray-50 border-b border-gray-200">
+                <th class="px-4 py-3 text-left font-semibold text-gray-700 w-1/5">项目</th>
+                <th class="px-4 py-3 text-left font-semibold text-gray-700 w-2/5">简介</th>
+                <th class="px-4 py-3 text-left font-semibold text-gray-700 w-1/5">数据</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="border-b border-gray-100 project-row" data-name="microsoft/vscode-dev-containers" data-desc="Docker + DevContainers 基于容器更轻量">
+                <td class="px-4 py-3 font-medium"><a href="https://github.com/microsoft/vscode-dev-containers" target="_blank" class="text-primary hover:underline">microsoft/vscode-dev-containers</a></td>
+                <td class="px-4 py-3 text-gray-600">Docker + DevContainers，基于容器更轻量，与 VS Code 深度集成快速启动</td>
+                <td class="px-4 py-3 text-gray-500"><i class="fa fa-github mr-1"></i>Open Source</td>
+              </tr>
+              <tr class="border-b border-gray-100 project-row" data-name="loft-sh/devpod" data-desc="开源云开发环境管理器 支持多种后端">
+                <td class="px-4 py-3 font-medium"><a href="https://github.com/loft-sh/devpod" target="_blank" class="text-primary hover:underline">loft-sh/devpod</a></td>
+                <td class="px-4 py-3 text-gray-600">开源云开发环境管理器，支持 Docker/Kubernetes/VM 多种后端 ⭐⭐⭐⭐⭐</td>
+                <td class="px-4 py-3 text-gray-500"><i class="fa fa-github mr-1"></i>Open Source</td>
+              </tr>
+              <tr class="border-b border-gray-100 project-row" data-name="coder/code-server" data-desc="运行在容器中的 VS Code 远程 IDE">
+                <td class="px-4 py-3 font-medium"><a href="https://github.com/coder/code-server" target="_blank" class="text-primary hover:underline">coder/code-server</a></td>
+                <td class="px-4 py-3 text-gray-600">运行在容器中的 VS Code 远程 IDE，完全兼容扩展，自托管</td>
+                <td class="px-4 py-3 text-gray-500"><i class="fa fa-github mr-1"></i>Open Source</td>
+              </tr>
+              <tr class="border-b border-gray-100 project-row" data-name="gitpod-io/openvscode-server" data-desc="GitLab 开源 基于 VS Code 的远程开发">
+                <td class="px-4 py-3 font-medium"><a href="https://github.com/gitpod-io/openvscode-server" target="_blank" class="text-primary hover:underline">gitpod-io/openvscode-server</a></td>
+                <td class="px-4 py-3 text-gray-600">GitLab 开源，轻量级远程开发，易于部署</td>
+                <td class="px-4 py-3 text-gray-500"><i class="fa fa-github mr-1"></i>Open Source</td>
+              </tr>
+              <tr class="border-b border-gray-100 project-row" data-name="gitpod-io/gitpod" data-desc="云原生开发环境 一键创建预配置环境">
+                <td class="px-4 py-3 font-medium"><a href="https://github.com/gitpod-io/gitpod" target="_blank" class="text-primary hover:underline">gitpod-io/gitpod</a></td>
+                <td class="px-4 py-3 text-gray-600">云原生开发环境，一键创建预配置环境，支持 SaaS + 自托管</td>
+                <td class="px-4 py-3 text-gray-500"><i class="fa fa-github mr-1"></i>Open Source</td>
+              </tr>
+              <tr class="border-b border-gray-100 project-row" data-name="kasmtech/KasmVNC" data-desc="容器化桌面工作区 支持完整桌面体验">
+                <td class="px-4 py-3 font-medium"><a href="https://github.com/kasmtech/KasmVNC" target="_blank" class="text-primary hover:underline">kasmtech/KasmVNC</a></td>
+                <td class="px-4 py-3 text-gray-600">容器化桌面工作区，支持完整桌面体验，类似 Manus ⭐⭐⭐⭐⭐</td>
+                <td class="px-4 py-3 text-gray-500"><i class="fa fa-github mr-1"></i>Open Source</td>
+              </tr>
+              <tr class="border-b border-gray-100 project-row" data-name="hashicorp/vagrant" data-desc="QEMU + Vagrant 完整硬件虚拟化经典组合">
+                <td class="px-4 py-3 font-medium"><a href="https://www.vagrantup.com/" target="_blank" class="text-primary hover:underline">hashicorp/vagrant</a></td>
+                <td class="px-4 py-3 text-gray-600">完整硬件虚拟化，经典虚拟机组合，创建完全一致开发环境</td>
+                <td class="px-4 py-3 text-gray-500"><i class="fa fa-github mr-1"></i>Open Source</td>
+              </tr>
+              <tr class="border-b border-gray-100 project-row" data-name="lima-vm/lima" data-desc="macOS 上运行 Linux 虚拟机 轻量级">
+                <td class="px-4 py-3 font-medium"><a href="https://github.com/lima-vm/lima" target="_blank" class="text-primary hover:underline">lima-vm/lima</a></td>
+                <td class="px-4 py-3 text-gray-6666666">macOS 上运行 Linux 虚拟机，开箱即用与 Docker 兼容</td>
+                <td class="px-4 py-3 text-gray-500"><i class="fa fa-github mr-1"></i>Open Source</td>
+              </tr>
+              <tr class="border-b border-gray-100 project-row" data-name="canonical/multipass" data-desc="Canonical 轻量级虚拟机管理">
+                <td class="px-4 py-3 font-medium"><a href="https://github.com/canonical/multipass" target="_blank" class="text-primary hover:underline">canonical/multipass</a></td>
+                <td class="px-4 py-3 text-gray-6666666">Canonical 出品，一键创建 Ubuntu 虚拟机，简单易用</td>
+                <td class="px-4 py-3 text-gray-500"><i class="fa fa-github mr-1"></i>Open Source</td>
+              </tr>
+              <tr class="project-row" data-name="firecracker-microvm/firecracker" data-desc="AWS 开源轻量级微虚拟机">
+                <td class="px-4 py-3 font-medium"><a href="https://github.com/firecracker-microvm/firecracker" target="_blank" class="text-primary hover:underline">firecracker-microvm/firecracker</a></td>
+                <td class="px-4 py-3 text-gray-600">AWS 开源，极快启动，适用于 Serverless 场景的微虚拟机</td>
+                <td class="px-4 py-3 text-gray-500"><i class="fa fa-github mr-1"></i>Open Source</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- AI Agent / 精选项目 -->
+      <section class="mb-10 category-section" data-category="AI Agent / 精选项目">
+        <div class="flex items-center mb-4">
+          <div class="category-icon bg-red-100 text-red-600 mr-4">
+            <i class="fa fa-rocket text-xl"></i>
+          </div>
+          <h2 class="text-2xl font-bold text-gray-800">AI Agent / 精选项目</h2>
+        </div>
+        <div class="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden">
+          <table class="w-full text-sm">
+            <thead>
+              <tr class="bg-gray-50 border-b border-gray-200">
+                <th class="px-4 py-3 text-left font-semibold text-gray-700 w-1/5">项目</th>
+                <th class="px-4 py-3 text-left font-semibold text-gray-700 w-2/5">简介</th>
+                <th class="px-4 py-3 text-left font-semibold text-gray-700 w-1/5">数据</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="border-b border-gray-100 project-row" data-name="bytedance/deer-flow" data-desc="DeerFlow 开源超级代理工具">
+                <td class="px-4 py-3 font-medium"><a href="https://github.com/bytedance/deer-flow" target="_blank" class="text-primary hover:underline">bytedance/deer-flow</a></td>
+                <td class="px-4 py-3 text-gray-600">DeerFlow 2.0，开源超级代理工具。将子代理、内存和沙箱组织在一起，配合可扩展技能，让代理可以完成几乎任何事情</td>
+                <td class="px-4 py-3 text-gray-500"><i class="fa fa-github mr-1"></i>GitHub</td>
+              </tr>
+              <tr class="border-b border-gray-100 project-row" data-name="msitarzewski/agency-agents" data-desc="AI 人才市场 Claude Code Cursor">
+                <td class="px-4 py-3 font-medium"><a href="https://github.com/msitarzewski/agency-agents" target="_blank" class="text-primary hover:underline">msitarzewski/agency-agents</a></td>
+                <td class="px-4 py-3 text-gray-600">"AI 人才市场"——不用一个通用 AI 干所有活，让专业 AI 干专业活。提供前端专家、安全审计、创意激发等开箱即用角色，纯提示词工程直接用</td>
+                <td class="px-4 py-3 text-gray-500"><i class="fa fa-github mr-1"></i>46k ⭐ • 周 +23.2k</td>
+              </tr>
+              <tr class="border-b border-gray-100 project-row" data-name="obra/superpowers" data-desc="AI 编程 Agent 技能商店 开发方法论">
+                <td class="px-4 py-3 font-medium"><a href="https://github.com/obra/superpowers" target="_blank" class="text-primary hover:underline">obra/superpowers</a></td>
+                <td class="px-4 py-3 text-gray-600">一套 AI 编程 Agent 的"技能商店"和开发方法论，让 AI 写代码更靠谱。系统化流程：理解需求 → 制定方案 → 实现 → 验证</td>
+                <td class="px-4 py-3 text-gray-500"><i class="fa fa-github mr-1"></i>10.5k ⭐ • 周 +19.2k</td>
+              </tr>
+              <tr class="border-b border-gray-100 project-row" data-name="666ghj/MiroFish" data-desc="群体智能预测引擎">
+                <td class="px-4 py-3 font-medium"><a href="https://github.com/666ghj/MiroFish" target="_blank" class="text-primary hover:underline">666ghj/MiroFish</a></td>
+                <td class="px-4 py-3 text-gray-600">简洁通用的群体智能预测引擎——"三个臭皮匠，顶个诸葛亮"，多个 AI 模型协同预测比单个准</td>
+                <td class="px-4 py-3 text-gray-500"><i class="fa fa-github mr-1"></i>周 +17.6k</td>
+              </tr>
+              <tr class="border-b border-gray-100 project-row" data-name="volcengine/OpenViking" data-desc="AI Agent 上下文数据库">
+                <td class="px-4 py-3 font-medium"><a href="https://github.com/volcengine/OpenViking" target="_blank" class="text-primary hover:underline">volcengine/OpenViking</a></td>
+                <td class="px-4 py-3 text-gray-600">字节火山开源，解决 Agent "记不住事"痛点，把上下文变成结构化数据库，高效存储快速检索</td>
+                <td class="px-4 py-3 text-gray-500"><i class="fa fa-github mr-1"></i>周 +10.2k</td>
+              </tr>
+              <tr class="border-b border-gray-100 project-row" data-name="lightpanda-io/browser" data-desc="专为 AI 设计的无头浏览器">
+                <td class="px-4 py-3 font-medium"><a href="https://github.com/lightpanda-io/browser" target="_blank" class="text-primary hover:underline">lightpanda-io/browser</a></td>
+                <td class="px-4 py-3 text-gray-600">给 AI 装上"眼睛"，传统无头浏览器太笨重，lightpanda 启动快资源占用小，专为 AI 自动化浏览设计</td>
+                <td class="px-4 py-3 text-gray-500"><i class="fa fa-github mr-1"></i>周 +9.9k</td>
+              </tr>
+              <tr class="border-b border-gray-100 project-row" data-name="colorizeblob/impeccable" data-desc="AI 执行安全检查层">
+                <td class="px-4 py-3 font-medium"><a href="https://github.com/colorizeblob/impeccable" target="_blank" class="text-primary hover:underline">colorizeblob/impeccable</a></td>
+                <td class="px-4 py-3 text-gray-600">给 AI 的操作系上"安全带"，防止乱删文件乱执行命令。危险操作要确认，敏感文件不能碰，操作可回滚</td>
+                <td class="px-4 py-3 text-gray-500"><i class="fa fa-github mr-1"></i>GitHub</td>
+              </tr>
+              <tr class="border-b border-gray-100 project-row" data-name="coze-dev/page-agent" data-desc="网页 AI 自动化 Agent">
+                <td class="px-4 py-3 font-medium"><a href="https://github.com/coze-dev/page-agent" target="_blank" class="text-primary hover:underline">coze-dev/page-agent</a></td>
+                <td class="px-4 py-3 text-gray-600">AI 输入自然语言指令，Agent 自动在网页上点击、填写、提交，适合填表、爬信息、自动化办公流程</td>
+                <td class="px-4 py-3 text-gray-500"><i class="fa fa-github mr-1"></i>GitHub</td>
+              </tr>
+              <tr class="border-b border-gray-100 project-row" data-name="context-hub/context-hub" data-desc="AI 上下文仓库 省钱">
+                <td class="px-4 py-3 font-medium"><a href="https://github.com/context-hub/context-hub" target="_blank" class="text-primary hover:underline">context-hub/context-hub</a></td>
+                <td class="px-4 py-3 text-gray-600">帮你压缩、存储、复用上下文，重复上下文不用每次重发，大幅降低 Token 成本</td>
+                <td class="px-4 py-3 text-gray-500"><i class="fa fa-github mr-1"></i>GitHub</td>
+              </tr>
+              <tr class="border-b border-gray-100 project-row" data-name="brexhq/deepagents" data-desc="规模化多智能体开发框架">
+                <td class="px-4 py-3 font-medium"><a href="https://github.com/brexhq/deepagents" target="_blank" class="text-primary hover:underline">brexhq/deepagents</a></td>
+                <td class="px-4 py-3 text-gray-600">让你低成本开发运行多个智能体，标准化模块化方便编排，降低企业级多智能体落地成本</td>
+                <td class="px-4 py-3 text-gray-500"><i class="fa fa-github mr-1"></i>GitHub</td>
+              </tr>
+              <tr class="border-b border-gray-100 project-row" data-name="microsoft/BitNet" data-desc="微软开源 1-bit 大模型压缩技术">
+                <td class="px-4 py-3 font-medium"><a href="https://github.com/microsoft/BitNet" target="_blank" class="text-primary hover:underline">microsoft/BitNet</a></td>
+                <td class="px-4 py-3 text-gray-600">极致压缩，1-bit 就够了，模型体积缩小十几倍，推理超快内存超低，让大模型低成本规模化部署</td>
+                <td class="px-4 py-3 text-gray-500"><i class="fa fa-github mr-1"></i>Microsoft Research</td>
+              </tr>
+              <tr class="border-b border-gray-100 project-row" data-name="badlogic/pi-mono" data-desc="轻量级模块化 AI Agent 执行框架">
+                <td class="px-4 py-3 font-medium"><a href="https://github.com/badlogic/pi-mono" target="_blank" class="text-primary hover:underline">badlogic/pi-mono</a></td>
+                <td class="px-4 py-3 text-gray-600">极简设计模块化和解耦，适合本地运行 AI Agent，代码精简容易二次魔改，OpenClaw 借鉴了它的设计思想</td>
+                <td class="px-4 py-3 text-gray-500"><i class="fa fa-github mr-1"></i>GitHub</td>
+              </tr>
+              <tr class="border-b border-gray-100 project-row" data-name="justlovemaki/OpenClaw-Docker-CN-IM" data-desc="打通国产 IM 的 OpenClaw Docker 镜像">
+                <td class="px-4 py-3 font-medium"><a href="https://github.com/justlovemaki/OpenClaw-Docker-CN-IM" target="_blank" class="text-primary hover:underline">justlovemaki/OpenClaw-Docker-CN-IM</a></td>
+                <td class="px-4 py-3 text-gray-600">打通飞书/微信/钉钉，国内用户一键部署，现成 Docker 镜像省去编译配置</td>
+                <td class="px-4 py-3 text-gray-500"><i class="fa fa-github mr-1"></i>GitHub</td>
+              </tr>
+              <tr class="border-b border-gray-100 project-row" data-name="ValueCell-ai/ClawX" data-desc="OpenClaw 社区魔改版本">
+                <td class="px-4 py-3 font-medium"><a href="https://github.com/ValueCell-ai/ClawX" target="_blank" class="text-primary hover:underline">ValueCell-ai/ClawX</a></td>
+                <td class="px-4 py-3 text-gray-600">社区开发者针对特定场景做了功能增强，适合喜欢折腾的玩家体验新特性</td>
+                <td class="px-4 py-3 text-gray-500"><i class="fa fa-github mr-1"></i>GitHub</td>
+              </tr>
+              <tr class="border-b border-gray-100 project-row" data-name="OpenBMB/EdgeClaw" data-desc="清华开源 断网也能干活的两栖端侧 AI">
+                <td class="px-4 py-3 font-medium"><a href="https://github.com/OpenBMB/EdgeClaw" target="_blank" class="text-primary hover:underline">OpenBMB/EdgeClaw</a></td>
+                <td class="px-4 py-3 text-gray-600">"断网也能干活的龙虾"，联网能用云端大模型，断网能本地运行，端侧优化适合隐私敏感场景</td>
+                <td class="px-4 py-3 text-gray-500"><i class="fa fa-github mr-1"></i>清华团队</td>
+              </tr>
+              <tr class="border-b border-gray-100 project-row" data-name="shareAI-lab/learn-claude-code" data-desc="Claude Code 从入门到精通教程">
+                <td class="px-4 py-3 font-medium"><a href="https://github.com/shareAI-lab/learn-claude-code" target="_blank" class="text-primary hover:underline">shareAI-lab/learn-claude-code</a></td>
+                <td class="px-4 py-3 text-gray-600">真正理解 Agent Harness 工程，系统化学习用好 Claude Code，沉淀社区最佳实践</td>
+                <td class="px-4 py-3 text-gray-500"><i class="fa fa-github mr-1"></i>GitHub</td>
+              </tr>
+              <tr class="border-b border-gray-100 project-row" data-name="Agents365-ai/zotero-rag-cli" data-desc="Zotero 文献库 RAG 语义检索">
+                <td class="px-4 py-3 font-medium"><a href="https://github.com/Agents365-ai/zotero-rag-cli" target="_blank" class="text-primary hover:underline">Agents365-ai/zotero-rag-cli</a></td>
+                <td class="px-4 py-3 text-gray-600">本地给 Zotero 文献库建立 RAG 索引，语义搜索隐私安全，配合 Claude Code 让 AI 引用文献写作文</td>
+                <td class="px-4 py-3 text-gray-500"><i class="fa fa-github mr-1"></i>GitHub</td>
+              </tr>
+              <tr class="border-b border-gray-100 project-row" data-name="Crosstalk-Solutions/project-nomad" data-desc="自包含离线生存计算机">
+                <td class="px-4 py-3 font-medium"><a href="https://github.com/Crosstalk-Solutions/project-nomad" target="_blank" class="text-primary hover:underline">Crosstalk-Solutions/project-nomad</a></td>
+                <td class="px-4 py-3 text-gray-600">离线优先的知识和 AI 系统，预装工具+知识库+AI，不依赖公共互联网，适合隐私敏感和网络不可用环境</td>
+                <td class="px-4 py-3 text-gray-500"><i class="fa fa-github mr-1"></i>GitHub</td>
+              </tr>
+              <tr class="border-b border-gray-100 project-row" data-name="liliMozi/openhanako" data-desc="openhanako">
+                <td class="px-4 py-3 font-medium"><a href="https://github.com/liliMozi/openhanako" target="_blank" class="text-primary hover:underline">liliMozi/openhanako</a></td>
+                <td class="px-4 py-3 text-gray-600">openhanako</td>
+                <td class="px-4 py-3 text-gray-500"><i class="fa fa-github mr-1"></i>GitHub</td>
+              </tr>
+              <tr class="project-row" data-name="docling-project/docling" data-desc="Docling 文档处理 PDF 理解">
+                <td class="px-4 py-3 font-medium"><a href="https://github.com/docling-project/docling" target="_blank" class="text-primary hover:underline">docling-project/docling</a></td>
+                <td class="px-4 py-3 text-gray-600">简化文档处理，解析各种格式（包括高级 PDF 理解），与 gen AI 生态无缝集成</td>
+                <td class="px-4 py-3 text-gray-500"><i class="fa fa-github mr-1"></i>GitHub</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center text-gray-500 py-8 border-t border-gray-200 mt-12">
+      <p class="text-sm">欢迎随时添加新发现的项目 ⭐</p>
+      <p class="text-xs mt-2 text-gray-400">最后更新：<span id="lastUpdate"></span></p>
+    </footer>
+  </div>
+
+  <script>
+    // 设置最后更新日期
+    document.getElementById('lastUpdate').textContent = new Date().toLocaleDateString('zh-CN');
+
+    // 搜索功能
+    function searchProjects() {
+      const input = document.getElementById('searchInput');
+      const filter = input.value.toLowerCase();
+      const projectRows = document.querySelectorAll('.project-row');
+      const sections = document.querySelectorAll('.category-section');
+
+      projectRows.forEach(row => {
+        const name = row.getAttribute('data-name').toLowerCase();
+        const desc = row.getAttribute('data-desc').toLowerCase();
+        if (name.includes(filter) || desc.includes(filter)) {
+          row.style.display = 'table-row';
+        } else {
+          row.style.display = 'none';
+        }
+      });
+
+      // 隐藏没有可见项目的分类
+      sections.forEach(section => {
+        const visibleRows = section.querySelectorAll('.project-row:not([style*="none"])');
+        if (visibleRows.length === 0 && filter.length > 0) {
+          section.style.display = 'none';
+        } else {
+          section.style.display = 'block';
+        }
+      });
+    }
+  </script>
+</body>
+</html>
