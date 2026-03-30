@@ -68,6 +68,32 @@ _近期 GitHub Trending 热门 Agent 项目_
 - [tailwindlabs/tailwindcss](https://github.com/tailwindlabs/tailwindcss) - 实用优先的 CSS 框架
 - [hono/hono](https://github.com/hono/hono) - 轻量快速的 Web 框架
 
+## 🌟 企业级 AI 协作平台全景
+
+> 商业化产品与开源项目一览
+
+### 开源框架（Claw 类）
+- [openclaw/openclaw](https://github.com/openclaw/openclaw) - 本轮"龙虾"热潮的源头，开源本地 AI 智能体框架
+- [msitarzewski/agency-agents](https://github.com/msitarzewski/agency-agents) - ⭐ 46k (周 +23.2k) 给 Claude Code / Cursor 准备的"AI 人才市场"
+- [obra/superpowers](https://github.com/obra/superpowers) - ⭐ 10.5k (周 +19.2k) AI 编程 Agent 的"技能商店"
+
+### 大厂产品（Claw 类）
+- **阿里 JVS Claw / CoPaw** - 阿里版"龙虾"，支持一键云端部署（未开源）
+- **智谱 AutoClaw** - 国内首个一键安装的本地版 OpenClaw，预置 50+ 技能（未开源）
+- **QClaw / WorkBuddy** - 腾讯电脑管家出品，支持关联微信，5000+ 技能生态（未开源）
+- **ArkClaw** - 字节跳动/火山引擎，云上 SaaS 版，开箱即用，深度集成飞书（未开源）
+- **红手指 Operator** - 百度，移动版 OpenClaw，基于云手机技术（未开源）
+- **Xiaomi Miclaw** - 小米，端侧 AI 智能体，2026 年 3 月封闭测试中（未开源）
+- **小艺 Claw** - 华为，HarmonyOS 专属，系统级集成（未开源）
+- **MaxClaw** - MiniMax，基于 MiniMax M2.5 模型，支持 Telegram/Discord/Slack（未开源）
+
+### 企业级 AI 协作平台
+- **悟空 (WuKong)** - 阿里/钉钉，企业级 AI 原生工作平台，钉钉独立 APP，邀测中（未开源）
+- **aily** - 字节/飞书，企业级智能体开发平台，开箱即用工作助手（未开源）
+- **Copilot Studio** - 微软，全球企业级市场领导者，集成 Microsoft 365（未开源）
+- **Agentforce** - Salesforce，CRM 智能体，自动销售/服务代理（未开源）
+- **Now Assist** - ServiceNow，业务流程自动化，聚焦 ITSM 与工作流（未开源）
+
 ---
 
 *欢迎随时添加新发现的项目*
