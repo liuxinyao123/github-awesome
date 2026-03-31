@@ -39,6 +39,13 @@ _近期 GitHub Trending 热门 Agent 项目_
 - [Crosstalk-Solutions/project-nomad](https://github.com/Crosstalk-Solutions/project-nomad) - 自包含的离线生存计算机，离线优先
 - [liliMozi/openhanako](https://github.com/liliMozi/openhanako)
 - [docling-project/docling](https://github.com/docling-project/docling) - Docling 简化文档处理，支持高级 PDF 理解，与 gen AI 生态无缝集成
+- [memovai/mimiclaw](https://github.com/memovai/mimiclaw) - MimiClaw：五美元芯片上的 AI 助手
+- [qwibitai/nanoclaw](https://github.com/qwibitai/nanoclaw) - NanoClaw：把安全隔离做到极致
+- [zeroclaw-labs/zeroclaw](https://github.com/zeroclaw-labs/zeroclaw) - ZeroClaw：Rust 打造的极速守护进程
+- [sipeed/picoclaw](https://github.com/sipeed/picoclaw) - PicoClaw：来自中国的 Go 语言轻量选手
+- [warengonzaga/tinyclaw](https://github.com/warengonzaga/tinyclaw) - TinyClaw：做"人格"而不只做"工具"
+- [nearai/ironclaw](https://github.com/nearai/ironclaw) - IronClaw：NEAR AI 的安全堡垒
+- [nullclaw/nullclaw](https://github.com/nullclaw/nullclaw) - NullClaw：Zig 语言的终极极限挑战
 
 ## 🟠 开发工具
 
