@@ -47,6 +47,7 @@ _近期 GitHub Trending 热门 Agent 项目_
 - [nearai/ironclaw](https://github.com/nearai/ironclaw) - IronClaw：NEAR AI 的安全堡垒
 - [nullclaw/nullclaw](https://github.com/nullclaw/nullclaw) - NullClaw：Zig 语言的终极极限挑战
 - [bytebot-ai/bytebot](https://github.com/bytebot-ai/bytebot) - ByteBot：拥有完整虚拟桌面的桌面智能体，像人类一样完成多步骤工作流
+- [agentscope-ai/CoPaw](https://github.com/agentscope-ai/CoPaw) - CoPaw：AgentScope 生态的协作智能体框架
 
 ## 🟠 开发工具
 
