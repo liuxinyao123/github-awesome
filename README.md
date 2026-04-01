@@ -4,6 +4,7 @@
 
 ## 🔷 AI 框架与平台
 
+- [alibaba/ANOLISA](https://github.com/alibaba/ANOLISA) - 阿里巴巴开源项目，可能与机器学习、数据分析或系统优化相关
 - [openclaw/openclaw](https://github.com/openclaw/openclaw) - OpenClaw 开源 AI 助手框架
 - [lobehub/lobehub](https://github.com/lobehub/lobehub) - 下一代多智能体协作平台，将 Agent 作为工作交互单元，支持多智能体协作与智能团队设计
 - [anthropics/claude-code](https://github.com/anthropics/claude-code) - Claude Code 编码助手
