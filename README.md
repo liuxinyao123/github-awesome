@@ -110,3 +110,6 @@ _近期 GitHub Trending 热门 Agent 项目_
 ---
 
 *欢迎随时添加新发现的项目*
+
+- [agentscope-ai/HiClaw](https://github.com/agentscope-ai/HiClaw) - **企业级多智能体操作系统** 基于 Matrix 协议的透明、人机协作的多智能体操作系统，支持 Manager-Workers 架构，内置安全隔离机制，零配置 IM 集成。
+
