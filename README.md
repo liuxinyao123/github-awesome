@@ -50,6 +50,7 @@ _近期 GitHub Trending 热门 Agent 项目_
 - [nullclaw/nullclaw](https://github.com/nullclaw/nullclaw) - NullClaw：Zig 语言的终极极限挑战
 - [bytebot-ai/bytebot](https://github.com/bytebot-ai/bytebot) - ByteBot：拥有完整虚拟桌面的桌面智能体，像人类一样完成多步骤工作流
 - [agentscope-ai/CoPaw](https://github.com/agentscope-ai/CoPaw) - CoPaw：AgentScope 生态的协作智能体框架
+- [ultraworkers/claw-code](https://github.com/ultraworkers/claw-code) - **⭐ 122k+ 史上最快破 100k 星标的项目** Rust 语言开发的高性能编程辅助工具，基于 oh-my-codex 架构，提供更好的编程体验
 
 ## 🟠 开发工具
 
@@ -111,3 +112,6 @@ _近期 GitHub Trending 热门 Agent 项目_
 ---
 
 *欢迎随时添加新发现的项目*
+
+- [agentscope-ai/HiClaw](https://github.com/agentscope-ai/HiClaw) - **企业级多智能体操作系统** 基于 Matrix 协议的透明、人机协作的多智能体操作系统，支持 Manager-Workers 架构，内置安全隔离机制，零配置 IM 集成。
+
