@@ -6,6 +6,7 @@
 
 - [alibaba/ANOLISA](https://github.com/alibaba/ANOLISA) - 阿里巴巴开源项目，可能与机器学习、数据分析或系统优化相关
 - [openclaw/openclaw](https://github.com/openclaw/openclaw) - OpenClaw 开源 AI 助手框架
+- [owenliang/llm-wiki](https://github.com/owenliang/llm-wiki) - llm-wiki 项目实现，基于 karpathy/llm-wiki.md
 - [lobehub/lobehub](https://github.com/lobehub/lobehub) - 下一代多智能体协作平台，将 Agent 作为工作交互单元，支持多智能体协作与智能团队设计
 - [anthropics/claude-code](https://github.com/anthropics/claude-code) - Claude Code 编码助手
 - [continuedev/continue](https://github.com/continuedev/continue) - 开源 IDE AI 辅助编码
