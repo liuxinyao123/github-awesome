@@ -51,6 +51,7 @@ _近期 GitHub Trending 热门 Agent 项目_
 - [bytebot-ai/bytebot](https://github.com/bytebot-ai/bytebot) - ByteBot：拥有完整虚拟桌面的桌面智能体，像人类一样完成多步骤工作流
 - [agentscope-ai/CoPaw](https://github.com/agentscope-ai/CoPaw) - CoPaw：AgentScope 生态的协作智能体框架
 - [ultraworkers/claw-code](https://github.com/ultraworkers/claw-code) - **⭐ 122k+ 史上最快破 100k 星标的项目** Rust 语言开发的高性能编程辅助工具，基于 oh-my-codex 架构，提供更好的编程体验
+- [nousresearch/hermes-agent](https://github.com/nousresearch/hermes-agent) - **The agent that grows with you** 一个不断成长的 AI 代理，具有学习和适应能力
 
 ## 🟠 开发工具
 
