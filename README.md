@@ -54,6 +54,7 @@ _近期 GitHub Trending 热门 Agent 项目_
 - [nousresearch/hermes-agent](https://github.com/nousresearch/hermes-agent) - **The agent that grows with you** 一个不断成长的 AI 代理，具有学习和适应能力
 - [safishamsi/graphify](https://github.com/safishamsi/graphify) - **⭐ 19.3k** AI 编程助手技能，支持多种编程工具（Claude Code、Codex、OpenCode、Cursor、Gemini CLI、OpenClaw 等），将任何文件夹的代码、文档、论文或图片转换为可查询的知识图谱
 - [antgroup/ClawAegis](https://github.com/antgroup/ClawAegis) - **OpenClaw 运行时保护插件** 为 OpenClaw 提供全生命周期运行时保护的轻量级插件，由蚂蚁集团维护
+- [Yrzhe/pagefly](https://github.com/Yrzhe/pagefly) - **个人知识操作系统** 捕获 → 提炼 → 编译 → 服务。自托管的知识数据平台，带有 AI 代理、Telegram 机器人和 REST API
 
 ## 🟠 开发工具
 
