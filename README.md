@@ -51,6 +51,7 @@
 
 > 近期 GitHub Trending 热门 Agent 项目
 
+- [EverMind-AI/EverOS](https://github.com/EverMind-AI/EverOS) — 自演化长期记忆系统,跨 Agent 平台(Claude Code/Codex/OpenClaw/Hermes)的可移植记忆层,Markdown + SQLite + LanceDB 本地存储,支持多模态摄入
 - [bytedance/deer-flow](https://github.com/bytedance/deer-flow) — DeerFlow 2.0,开源超级代理工具:子代理 + 内存 + 沙箱 + 可扩展技能
 - [msitarzewski/agency-agents](https://github.com/msitarzewski/agency-agents) — "AI 人才市场",为 Claude Code / Cursor 准备的多角色 Agent 库(纯提示词工程)
 - [obra/superpowers](https://github.com/obra/superpowers) — AI 编程 Agent 的"技能商店"和系统化开发方法论
