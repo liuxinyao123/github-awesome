@@ -66,6 +66,7 @@
 - [brexhq/deepagents](https://github.com/brexhq/deepagents) — 规模化多智能体开发框架
 - [badlogic/pi-mono](https://github.com/badlogic/pi-mono) — 轻量级模块化 AI Agent 执行框架(OpenClaw 设计理念来源)
 - [shareAI-lab/learn-claude-code](https://github.com/shareAI-lab/learn-claude-code) — Claude Code 从入门到精通实战教程
+- [rohitg00/ai-engineering-from-scratch](https://github.com/rohitg00/ai-engineering-from-scratch) — AI 工程全栈开源教学:503 节课 / 20 阶段 / 4 语言(Python/TS/Rust/Julia),从线性代数手写实现到自主智能体群
 - [docling-project/docling](https://github.com/docling-project/docling) — 文档处理工具,支持高级 PDF 理解,无缝集成 gen AI 生态
 - [Crosstalk-Solutions/project-nomad](https://github.com/Crosstalk-Solutions/project-nomad) — 自包含的离线生存计算机,离线优先
 - [nousresearch/hermes-agent](https://github.com/nousresearch/hermes-agent) — The agent that grows with you,Nous Research 出品
