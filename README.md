@@ -53,6 +53,7 @@
 - [bytedance/deer-flow](https://github.com/bytedance/deer-flow) — DeerFlow 2.0,开源超级代理工具:子代理 + 内存 + 沙箱 + 可扩展技能
 - [msitarzewski/agency-agents](https://github.com/msitarzewski/agency-agents) — "AI 人才市场",为 Claude Code / Cursor 准备的多角色 Agent 库(纯提示词工程)
 - [obra/superpowers](https://github.com/obra/superpowers) — AI 编程 Agent 的"技能商店"和系统化开发方法论
+- [Leonxlnx/taste-skill](https://github.com/Leonxlnx/taste-skill) — "反水货"前端 Agent 技能包,升级 AI 生成 UI 的排版/字体/动效/留白,兼容 Codex/Cursor/Claude Code
 - [666ghj/MiroFish](https://github.com/666ghj/MiroFish) — 简洁通用的群体智能预测引擎
 - [volcengine/OpenViking](https://github.com/volcengine/OpenViking) — 字节火山引擎开源的 AI Agent 上下文数据库
 - [lightpanda-io/browser](https://github.com/lightpanda-io/browser) — 专为 AI 设计的无头浏览器
