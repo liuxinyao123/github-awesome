@@ -44,6 +44,7 @@
 - [continuedev/continue](https://github.com/continuedev/continue) — 开源 IDE AI 辅助编码
 - [kyegomez/OpenAGI](https://github.com/kyegomez/OpenAGI) — 开源多智能体框架
 - [mermaid-js/mermaid](https://github.com/mermaid-js/mermaid) — 基于文本的图表生成
+- [OpenBMB/PilotDeck](https://github.com/OpenBMB/PilotDeck) — 面向任务的 AI Agent 生产力平台,以"WorkSpace"为单位的开源 Agent 操作系统,清华 THUNLP / ModelBest / OpenBMB 联合出品,原生支持 MCP
 - [microsoft/BitNet](https://github.com/microsoft/BitNet) — 微软开源 1-bit 大模型压缩技术
 
 ### AI Agent 创新项目
