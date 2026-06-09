@@ -39,12 +39,17 @@
 - [alibaba/ANOLISA](https://github.com/alibaba/ANOLISA) — 阿里巴巴开源项目,可能与机器学习、数据分析或系统优化相关
 - [openclaw/openclaw](https://github.com/openclaw/openclaw) — OpenClaw 开源 AI 助手框架
 - [owenliang/llm-wiki](https://github.com/owenliang/llm-wiki) — llm-wiki 项目实现,基于 [karpathy/llm-wiki.md](https://github.com/karpathy/llm-wiki.md)
+- [roboflow/supervision](https://github.com/roboflow/supervision) — 可复用计算机视觉工具库,封装检测/分割/跟踪/标注等通用 CV 流程
 - [lobehub/lobehub](https://github.com/lobehub/lobehub) — 下一代多智能体协作平台,Agent 作为工作交互单元
 - [anthropics/claude-code](https://github.com/anthropics/claude-code) — Anthropic Claude Code 编码助手
 - [continuedev/continue](https://github.com/continuedev/continue) — 开源 IDE AI 辅助编码
 - [kyegomez/OpenAGI](https://github.com/kyegomez/OpenAGI) — 开源多智能体框架
 - [mermaid-js/mermaid](https://github.com/mermaid-js/mermaid) — 基于文本的图表生成
 - [OpenBMB/PilotDeck](https://github.com/OpenBMB/PilotDeck) — 面向任务的 AI Agent 生产力平台,以"WorkSpace"为单位的开源 Agent 操作系统,清华 THUNLP / ModelBest / OpenBMB 联合出品,原生支持 MCP
+- [CopilotKit/CopilotKit](https://github.com/CopilotKit/CopilotKit) — Agent 原生应用前端框架,Generative UI / shared state / human-in-the-loop,支持 React/Angular/Vue/React Native
+- [openai/plugins](https://github.com/openai/plugins) — OpenAI 官方 Codex 插件示例集,涵盖 Figma/Notion/iOS/macOS/Web/Expo/Netlify/Remotion 等
+- [aaif-goose/goose](https://github.com/aaif-goose/goose) — 通用开源 AI Agent,desktop app + CLI + API,Rust 实现,支持 15+ 模型提供商与 70+ MCP 扩展(Linux 基金会 AAIF 托管)
+- [apple/coreai-models](https://github.com/apple/coreai-models) — Apple Core AI 模型导出配方、Python 原语与 Swift 运行时,支持端侧 AI 部署
 - [microsoft/BitNet](https://github.com/microsoft/BitNet) — 微软开源 1-bit 大模型压缩技术
 
 ### AI Agent 创新项目
@@ -52,12 +57,16 @@
 > 近期 GitHub Trending 热门 Agent 项目
 
 - [EverMind-AI/EverOS](https://github.com/EverMind-AI/EverOS) — 自演化长期记忆系统,跨 Agent 平台(Claude Code/Codex/OpenClaw/Hermes)的可移植记忆层,Markdown + SQLite + LanceDB 本地存储,支持多模态摄入
+- [mvanhorn/last30days-skill](https://github.com/mvanhorn/last30days-skill) — 跨平台 30 天话题研究 agent skill(Reddit/HN/Twitter/YouTube 等),兼容 Claude Code/Codex/Cursor/Copilot/Gemini CLI
+- [MemPalace/mempalace](https://github.com/MemPalace/mempalace) — 本地优先的 AI 长期记忆系统,96.6% R@5 raw on LongMemEval,可插拔后端,零 API 调用
 - [bytedance/deer-flow](https://github.com/bytedance/deer-flow) — DeerFlow 2.0,开源超级代理工具:子代理 + 内存 + 沙箱 + 可扩展技能
 - [msitarzewski/agency-agents](https://github.com/msitarzewski/agency-agents) — "AI 人才市场",为 Claude Code / Cursor 准备的多角色 Agent 库(纯提示词工程)
 - [obra/superpowers](https://github.com/obra/superpowers) — AI 编程 Agent 的"技能商店"和系统化开发方法论
+- [google/skills](https://github.com/google/skills) — Google 官方 Agent Skills 仓库,涵盖 Gemini API / Cloud / Agent Platform 等技能包
 - [Leonxlnx/taste-skill](https://github.com/Leonxlnx/taste-skill) — "反水货"前端 Agent 技能包,升级 AI 生成 UI 的排版/字体/动效/留白,兼容 Codex/Cursor/Claude Code
 - [666ghj/MiroFish](https://github.com/666ghj/MiroFish) — 简洁通用的群体智能预测引擎
 - [volcengine/OpenViking](https://github.com/volcengine/OpenViking) — 字节火山引擎开源的 AI Agent 上下文数据库
+- [Panniantong/Agent-Reach](https://github.com/Panniantong/Agent-Reach) — 给 AI Agent 一键装上互联网能力(YouTube/Twitter/Reddit 等平台)
 - [lightpanda-io/browser](https://github.com/lightpanda-io/browser) — 专为 AI 设计的无头浏览器
 - [colorizeblob/impeccable](https://github.com/colorizeblob/impeccable) — AI 执行的安全检查层
 - [alibaba/page-agent](https://github.com/alibaba/page-agent) — 阿里巴巴开源的网页 AI 自动化 Agent
@@ -73,6 +82,7 @@
 - [Crosstalk-Solutions/project-nomad](https://github.com/Crosstalk-Solutions/project-nomad) — 自包含的离线生存计算机,离线优先
 - [nousresearch/hermes-agent](https://github.com/nousresearch/hermes-agent) — The agent that grows with you,Nous Research 出品
 - [ultraworkers/claw-code](https://github.com/ultraworkers/claw-code) — Rust 语言开发的高性能编程辅助工具,基于 oh-my-codex 架构
+- [xiaohuailabs/xiaohu-video-translate](https://github.com/xiaohuailabs/xiaohu-video-translate) — 一键把外语视频转成中文字幕视频 + 文稿的 Agent Skill,本地 Whisper 转写零 API 费
 
 ### Claw 生态与衍生品
 
@@ -107,12 +117,13 @@
 - [docling-project/docling](https://github.com/docling-project/docling) — 文档处理工具,支持高级 PDF 理解
 - [safishamsi/graphify](https://github.com/safishamsi/graphify) — AI 编程助手技能:将代码/文档/论文/图片转换为可查询的知识图谱
 - [Yrzhe/pagefly](https://github.com/Yrzhe/pagefly) — 个人知识操作系统:捕获 → 提炼 → 编译 → 服务
+- [refactoringhq/tolaria](https://github.com/refactoringhq/tolaria) — Markdown 知识库桌面管理工具,files-first / git-first,10k+ 笔记实测可用,兼容 OpenClaw 记忆存档
 
 ### Vector Database
 
 > 向量数据库与近似最近邻(ANN)搜索库
 
-- [待补充] — 该分类尚待收录项目,欢迎 PR 推荐
+- [RyanCodrai/turbovec](https://github.com/RyanCodrai/turbovec) — Rust 实现的 TurboQuant 向量索引,基于 Google Research 算法,无码本训练,本地存储比 FAISS 快 12-20%(ARM)
 
 ### LLM 推理与服务
 
